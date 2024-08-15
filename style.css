@@ -12,6 +12,26 @@ body {
     font-family: "Roboto", sans-serif
 }
 
+.btn-primary {
+    background-color: var(--primary);
+    border-radius: 100px;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-outline-secondary {
+    border-radius: 100px;
+    border-color: #EEEEEE;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-outline-secondary a {
+    color: var(--title);
+}
+
 /* Navbar */
 
 nav {
@@ -30,20 +50,12 @@ nav ul {
     gap: 24px
 }
 
-nav  .nav-link {
+nav .nav-link {
     color: var(--paragraph);
 }
 
 nav .right a {
     width: 105px;
-}
-
-nav .btn {
-    background-color: var(--primary);
-    border-radius: 100px;
-    padding: 16px 32px;
-    font-size: 14px;
-    font-weight: bold;
 }
 
 button.navbar-toggler {
@@ -57,5 +69,51 @@ button.navbar-toggler {
 }
 
 
+/* Hero Section */
 
+.hero .row .btn-filled-secondary a {
+    color: var(--secondary);
+    font-weight: bold;
+}
 
+.hero .row .left span {
+    color: var(--secondary);
+}
+
+.hero .title {
+    font-size: 69px;
+}
+
+.hero .left p {
+    color: var(--paragraph);
+}
+
+.hero .right {
+    position: relative;
+}
+
+.hero-images {
+    position: absolute;
+    top: 16%;
+    left: 15%;
+}
+
+.hero .right .hero-images .left-images,
+.hero .right .hero-images .right-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Allow the images to share space equally */
+}
+
+.hero-images .left-images > img {
+    max-height: 300px;
+}
+
+.hero-images .right-image > img {
+    max-height: 400px;
+}
+
+.hero-bg {
+    width: 100%;
+}
